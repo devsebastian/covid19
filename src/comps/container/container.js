@@ -14,7 +14,7 @@ import AnswerContainer from '../answer-container/answer-container'
 import ButtonsContainer from '../buttons-container/buttons-container'
 
 function ResultButton({ title, leftIcon, rightIcon, link, subtitle }) {
-    return <a href={link} className="result-button" >
+    return <a target="_blank" rel="noopener noreferrer" href={link} className="result-button" >
         <img src={leftIcon} className="result-button-icon" alt="left-icon" />
         <div class="result-button-text">
             <div className="result-button-title">{title}</div>
@@ -28,7 +28,7 @@ function Result({ statements }) {
     var CDCmessage = <font style={{ color: "#4caf50" }}><img width="40%" src={check} alt="checked" style={{ display: "block", margin: "32px auto" }} /><b>As per CDC and WHO Guidelines, you are not a likely suspect of COVID-19.</b></font>
 
     var warning = (<div>
-        Incase your symptoms change, please take the self-assessment again or contact any healthcare facility near you.  <b><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">helpline numbers.</a></b>
+        Incase your symptoms change, please take the self-assessment again or contact any healthcare facility near you.  <b><a target="_blank" rel="noopener noreferrer" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">helpline numbers.</a></b>
         <br /><br />
         In case you suspect a positive case, please <a href="tel:1075"><b>call 1075</b></a> or report to a nearby healthcare facility</div>)
     var result = <div>{CDCmessage}<br /><br />{warning}</div>
@@ -104,7 +104,7 @@ export default class Container extends React.Component {
     }
 
     goToPreviousQuestion() {
-        if (this.state.questionNumber > 0) {
+        if (this.state.questionNumber >= 0) {
             this.setState(oldState => {
                 return { questionNumber: oldState.questionNumber - 1 }
             })
