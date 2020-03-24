@@ -61,7 +61,7 @@ export function getQuestions(locationInput, temperatureInput) {
             }, {
                 question: "Do you have cough?"
             }, {
-                question: "Do you have shortness in breath??"
+                question: "Do you have shortness in breath?"
             }, {
                 question: "Do you have a chronic Illness (Heart, Lung, or Kidney Disease, Diabetes) or are immunocompromised (Cancer, HIV, Autoimmune Disease)"
             }
