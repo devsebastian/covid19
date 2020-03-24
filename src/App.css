@@ -36,6 +36,9 @@ html, body, .App, #root {
   bottom: 0px;
   font-weight: bold;
 }
+.credits a{
+  text-decoration: none;
+}
 
 *:focus {
   outline: none;
