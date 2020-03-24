@@ -1,10 +1,14 @@
 .container {
-    background-color: #fff;
+    background-color: var(--container-back);
     max-width: 40%;
     min-width: 400px;
-    margin: 24px auto;
+    margin: 24px auto 40px auto;
     font-size: 18px;
-    box-shadow: 0 0 40px 0 rgb(221, 221, 221);
+    color: black;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1000;
 }
 
 .container-header {
@@ -55,6 +59,10 @@
     transition: all 0.2s ease;
 }
 
+.result-button:last-of-type{
+    border-bottom: 1px solid var(--progress-back);
+}
+
 .result button:hover {
     opacity: 0.7;
 }
@@ -88,7 +96,7 @@
 }
 .result-button-sub-title{
     display: block;
-    color: grey;
+    color: var(--extra);
     font-size: 13px;
 }
 

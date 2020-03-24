@@ -4,13 +4,14 @@
     text-align: justify;
     min-height: 100px;
     width: 400px;
+    color: black;
     min-width: 100%;
     max-width: 100%;
 }
 
 .question-number {
     font-weight: bold;
-    color: #b8b8b8;
+    color: var(--extra);
     text-align: start;
     margin: 12px 0px;
 }

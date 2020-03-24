@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 :root {
+  --container-back: #fff;
+  --background: #0f1522;
   --primary-dark: #f5f5f5;
   --primary: #fff;
   --accent: #3cb4e0;
   --progress-back: #f0f0f0;
+  --extra: #a2a3a7;
+  --button-background: #fff;
 }
 
 .App {
@@ -12,7 +16,7 @@
   display: block;
   position: relative;
   overflow: auto;
-  background-color: #f1f5fd;
+  background-color: var(--background);
 }
 
 * {
@@ -29,16 +33,21 @@ html, body, .App, #root {
   height: 100%;
   width: 100%;
 }
-.credits{
+
+.credits {
   color: grey;
   margin: 12px;
-  position: absolute;
   bottom: 0px;
+  position: fixed;
   font-weight: bold;
+  z-index: 0;
 }
-.credits a{
+
+.credits a {
   text-decoration: none;
+  color: var(--primary) !important;
 }
+
 
 *:focus {
   outline: none;
