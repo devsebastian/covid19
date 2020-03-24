@@ -1,0 +1,41 @@
+
+.control-btn-container {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+}
+
+.next-btn {
+    width: 100px;
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 0;
+    margin: 4px 12px;
+    text-align: center;
+}
+
+.next-btn-enabled {
+    color: var(--primary);
+    background: var(--accent);
+    cursor: pointer;
+}
+
+.next-btn-disabled {
+    color: black;
+    background: #f0f0f0;
+}
+
+.previous-btn {
+    flex: 1;
+    width: 100px;
+    padding: 12px;
+    background: var(--primary);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 12px;
+    font-weight: bold;
+    margin: 4px 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.container {
+    background-color: #fff;
+    max-width: 40%;
+    min-width: 400px;
+    margin: 24px auto;
+    font-size: 18px;
+    box-shadow: 0 0 40px 0 rgb(221, 221, 221);
+}
+
+.container-header {
+    padding: 20px 40px;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+}
+
+.result {
+    margin: 24px;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.result-extra {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #acacac;
+}
+
+.faq-container {
+    background-color: #fff;
+    max-width: 40%;
+    min-width: 400px;
+    margin: 24px auto;
+    font-size: 18px;
+    display: inline-block;
+    overflow: auto;
+    box-shadow: 0 0 40px 0 rgb(221, 221, 221);
+}
+
+.result-button-holder {
+    display: flex;
+    flex-direction: row;
+}
+
+.result button {
+    padding: 12px;
+    border-radius: 12px;
+    flex: 1;
+    font-weight: bold;
+    border: 0;
+    margin: 12px 8px;
+    color: var(--primary);
+    background: var(--accent);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.result button:hover {
+    opacity: 0.7;
+}
+
+.result-button {
+    width: 100%;
+    border-top: 1px solid var(--progress-back);
+    padding: 12px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result-button:first-of-type {
+    margin-top: 24px;
+}
+
+.result-button-icon {
+    height: 100%;
+    display: inline-block;
+}
+
+.result-button-text {
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.result-button-title{
+    display: block;    
+}
+.result-button-sub-title{
+    display: block;
+    color: grey;
+    font-size: 13px;
+}
+
+
+.statement-container {
+    padding: 12px 40px;
+}

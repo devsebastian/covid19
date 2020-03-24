@@ -1,0 +1,44 @@
+.option-btn {
+    width: 100%;
+    padding: 12px;
+    background: #f0f0f0;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 0;
+    margin: 12px 0px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-btn-selected {
+    background: var(--accent);
+    color: white;
+}
+
+.option-btn:hover {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+
+.conditional {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.conditional * {
+    margin: 12px 0;
+}
+
+.conditional input {
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #c5c5c5;
+}
+
+.spacer {
+    flex: 1;
+}

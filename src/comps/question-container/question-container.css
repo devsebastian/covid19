@@ -1,0 +1,16 @@
+
+.question {
+    font-weight: normal;
+    text-align: justify;
+    min-height: 100px;
+    width: 400px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.question-number {
+    font-weight: bold;
+    color: #b8b8b8;
+    text-align: start;
+    margin: 12px 0px;
+}
