@@ -49,7 +49,7 @@ function Result({ statements }) {
         (statements[2].answer === "yes" && statements[2].conditionalAnswer > 100 && statements[4].answer === "yes") ||
         (statements[1].answer === "yes" && statements[3].answer === "yes" && statements[4].answer === "yes")) {
         result = <div>
-            <img width="30%" src={corona} alt="corona" style={{ display: "block", margin: "32px auto" }} /> Based on the assesment, you are at risk for COVID-19
+            <img width="30%" src={corona} alt="corona" style={{ display: "block", margin: "32px auto" }} /> Based on the assessment, you are at risk for COVID-19
         <ResultButton link="https://www.mohfw.gov.in/pdf/FAQ.pdf" title="FAQ" leftIcon={helpCircle} rightIcon={rightCaret} />
             <ResultButton link="tel:108" title="Transporation to isolation ward" subtitle="Disaster management service: 108" leftIcon={ambulance} rightIcon={call} />
             <ResultButton link="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" title="For any assistance" subtitle="contact the govt. helpline: 1075" leftIcon={headphone} rightIcon={rightCaret} />
@@ -135,7 +135,7 @@ export default class Container extends React.Component {
             return <PaneContainer
                 questionNumber={questionNumber}
                 total={total}
-                body={<div class="statement-container">This web app is a COVID-19 Self Assesment Tool.
+                body={<div class="statement-container">This web app is a COVID-19 Self Assessment Tool.
                 <br /><br /><small><b><font color="gray">*This is not a medical advice.</font></b></small>
                     <br />
                     <br />
@@ -192,7 +192,7 @@ export default class Container extends React.Component {
 
 function PaneContainer({ questionNumber, total, body }) {
     return <div className="container">
-        <div className="container-header">COVID-19 Self Assesment</div>
+        <div className="container-header">COVID-19 Self Assessment</div>
         <Progress questionNumber={questionNumber} total={total} />
         {body}
     </div>
